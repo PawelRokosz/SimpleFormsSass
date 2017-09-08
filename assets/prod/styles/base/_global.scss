@@ -1,4 +1,12 @@
 body{
-  font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  height: auto;
+  background: url('../images/bg.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: $font-family;
+  font-size: $font-size;
+
+  @include respond-at(512px){
+    font-size: $media-font-size;
+  }
 }

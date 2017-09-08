@@ -35,7 +35,7 @@
 
  gulp.task('image', () =>
  	gulp.src('./assets/prod/images/*')
-     .pipe(changed('./assets/dist/images'))
+    .pipe(changed('./assets/prod/styles'))
  		.pipe(imagemin())
  		.pipe(gulp.dest('./assets/dist/images/'))
  );

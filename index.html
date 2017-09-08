@@ -11,7 +11,95 @@
   </head>
   <body>
 
-    <div class="container"></div>
+    <div class="container">
+
+      <div class="container column">
+
+        <div class="form">
+          <p class="form__title">Register Form</p>
+          <div class="form__bg">
+            <form class="form__wrapper" action="index.html" method="post">
+              <input class="form__input form__input--user" type="text" name="" value="" placeholder="Username" required>
+              <input class="form__input form__input--pass" type="password" name="" value="" placeholder="Password" required>
+              <input class="form__input form__input--pass" type="password" name="" value="" placeholder="Confirm Password" required>
+              <input class="form__input form__input--mail" type="email" name="" value="" placeholder="Email" required>
+              <input class="form__input form__input--loc" name="" value="" placeholder="Your Location" required>
+              <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" id="register" type="checkbox" name="field" value="option" required>
+                <label class="form__checkbox-label" for="register"><span><span></span></span>I have read and accept the terms od use.</label>
+              </div>
+              <button class="form__submit" type="submit" name="button">Sign up</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="form">
+          <p class="form__title">Send Email</p>
+          <div class="form__bg">
+            <form id="emailForm" class="form__wrapper" action="index.html" method="post" required>
+              <input class="form__input form__input--user" type="text" name="" value="" placeholder="Your Name" required>
+              <input class="form__input form__input--mail" type="email" name="" value="" placeholder="Email" required>
+              <textarea class="form__text-area" name="name" form="emailForm" placeholder="Type your message..." required></textarea>
+              <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" id="email" type="checkbox" name="field" value="option" required>
+                <label class="form__checkbox-label" for="email"><span><span></span></span>Send a copy to my Email.</label>
+              </div>
+              <button class="form__submit" type="submit" name="button">Send Email</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container column">
+
+        <div class="form">
+          <p class="form__title">Sign In Form</p>
+          <div class="form__bg">
+            <form class="form__wrapper" action="index.html" method="post">
+              <input class="form__input form__input--user" type="text" name="" value="" placeholder="Username" required>
+              <input class="form__input form__input--pass" type="password" name="" value="" placeholder="Password" required>
+              <div class="form__action-panel">
+                <div class="form__holder">
+                  <input class="form__checkbox" id="signin" type="checkbox" name="field" value="option" required>
+                  <label class="form__checkbox-label" for="signin"><span><span></span></span>Remember me</label>
+                </div>
+                <button class="form__submit" type="submit" name="button">Sign In</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="form">
+          <p class="form__title">Recover Form</p>
+          <div class="form__bg">
+            <form class="form__wrapper" action="index.html" method="post">
+              <input class="form__input form__input--mail" type="email" name="" value="" placeholder="Email" required>
+              <input class="form__input form__input--phone" type="tel" name="" value="" placeholder="Enter your Phone number" required>
+              <div class="form__action-panel">
+                <button class="form__submit" type="submit" name="button">Send</button>
+                <button class="form__submit form__submit--disabled" type="submit" name="button" disabled>Done</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="form">
+          <p class="form__title">Subscribe Form</p>
+          <div class="form__bg">
+            <form class="form__wrapper" action="index.html" method="post">
+              <input class="form__input form__input--mail" type="email" name="" value="" placeholder="Email" required>
+              <div class="form__action-panel">
+                <button class="form__submit" type="submit" name="button">Subscribe</button>
+                <button class="form__submit form__submit--decline" type="submit" name="button" disabled>No, Thanks</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
 
   <!-- For production -->
   <script src="assets/prod/js/variables.js" charset="utf-8"></script>

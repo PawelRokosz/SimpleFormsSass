@@ -1,0 +1,41 @@
+input[type=checkbox]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label{
+  display      : block;
+  margin-left  : -.2em;
+  margin-top   : -1.3em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span{
+  display          : inline-block;
+  width            : 1em;
+  height           : 1em;
+  margin           : 0.25em 0.25em 0.25em 0.25em;
+  border           : 0.0625em solid $form-border-normal;
+  border-radius    : 0.25em;
+  background       : $gradient-normal;
+  background-image : $gradient-normal;
+  vertical-align   : bottom;
+}
+
+input[type=checkbox]:not(old):checked + label > span{
+  background-image : $gradient-normal;
+}
+
+input[type=checkbox]:not(old):checked + label > span > span {
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.18em;
+  border           : 0.0625em solid $form-border-accept;
+  border-radius    : 0.125em;
+  background       : $gradient-accept-a;
+  background-image : $gradient-accept;
+}

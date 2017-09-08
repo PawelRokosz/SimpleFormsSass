@@ -1,0 +1,128 @@
+.form{
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+
+  &__title{
+    padding-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: $font-color;
+    text-shadow: -1px 2px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  &__bg{
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: $form-bg;
+  }
+
+  &__wrapper{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: $form-wrapper;
+  }
+
+  &__input{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0 10px 0 55px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    border: 1px solid $form-border-normal;
+    color: $font-input-color;
+
+    &--user{
+      background: url("../images/form_user.png") no-repeat 16px center, $gradient-normal;
+    }
+
+    &--pass{
+      background: url("../images/form_pass.png") no-repeat 16px center, $gradient-normal;
+    }
+
+    &--mail{
+      background: url("../images/form_mail.png") no-repeat 16px center, $gradient-normal;
+    }
+
+    &--loc{
+      background: url("../images/form_loc.png") no-repeat 16px center, $gradient-normal;
+    }
+
+    &--phone{
+      background: url("../images/form_phone.png") no-repeat 16px center, $gradient-normal;
+    }
+
+    &::placeholder{
+      padding-left: 15px;
+      color: $font-input-color;
+      border-left: 1px solid $form-border-normal;
+    }
+  }
+
+  &__checkbox-wrapper {
+    margin-bottom: 15px;
+  }
+
+  &__checkbox-label{
+    color: $font-input-color;
+  }
+
+  &__submit{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0;
+    // margin-top: 15px;
+    background: $gradient-accept;
+    border: 1px solid $form-border-accept;
+    border-radius: 3px;
+    color: $font-color;
+    text-shadow: -0.5px 0.5px 0px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+
+    &--disabled{
+      cursor: not-allowed;
+      margin-left: 20px;
+      opacity: 0.6;
+    }
+
+    &--decline{
+      margin-left: 20px;
+      border-color: $form-border-decline;
+      background: $gradient-decline;
+    }
+  }
+
+  &__text-area{
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid $form-border-normal;
+    background: $gradient-normal;
+    color: $font-input-color;
+
+    &::placeholder{
+      color: $font-input-color;
+    }
+  }
+
+  &__action-panel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__holder{
+    width: 100%;
+  }
+}

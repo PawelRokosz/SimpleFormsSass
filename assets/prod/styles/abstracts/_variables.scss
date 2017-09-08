@@ -1,4 +1,41 @@
 // *********************************
+// Font
+// *********************************
+
+@font-face {
+    font-family: 'titilliumtext22l';
+    src: url('../assets/fonts/TitilliumText22L003.otf');
+}
+
+$font-family: titilliumtext22l;
+$font-size: 16px;
+$media-font-size: 11px;
+$font-color: white;
+$font-input-color: #c6c6c6;
+
+// *********************************
 // Colors
 // *********************************
-$main-color: #2f3242;
+
+//background
+$form-bg: rgba(black, 0.23);
+$form-wrapper: #f4f4f4;
+
+$gradient-normal-a: #f4f4f4;
+$gradient-normal-b: #f0f0f0;
+
+$gradient-accept-a: #9dd230;
+$gradient-accetp-b: #73ba0e;
+
+$gradient-decline-a: #f76f7f;
+$gradient-decline-b: #f03747;
+
+//gradients
+$gradient-normal: linear-gradient(to bottom, $gradient-normal-a 0%, $gradient-normal-b 100%);
+$gradient-accept: linear-gradient($gradient-accept-a, $gradient-accetp-b);
+$gradient-decline: linear-gradient($gradient-decline-a, $gradient-decline-b);
+
+//borders
+$form-border-normal: #c6c6c6;
+$form-border-accept: #3b9a00;
+$form-border-decline: #a2202a;
